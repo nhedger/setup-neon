@@ -1,0 +1,27 @@
+name: Test
+
+on:
+  push:
+    branches: [ main, "releases/v*"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+        version: [ "latest", "1.36.0" ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Neon 
+        uses: ./
+        with:
+          version: ${{ matrix.version }}
+      - name: Test the CLI
+        run: |-
+          neon --version

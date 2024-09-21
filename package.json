@@ -1,0 +1,32 @@
+{
+	"name": "setup-neon",
+	"type": "module",
+	"description": "Setup Neon CLI in GitHub Actions",
+	"scripts": {
+		"build": "bun build --entrypoints src/index.ts --target=node --outdir dist",
+		"format": "biome format --write .",
+		"check": "biome check . --write",
+		"lint": "biome lint . --write"
+	},
+	"keywords": ["neon", "cli", "github-action"],
+	"author": {
+		"name": "Nicolas Hedger",
+		"email": "nicolas@hedger.ch"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@actions/core": "^1.10.1",
+		"@actions/tool-cache": "^2.0.1",
+		"@octokit/rest": "^20.1.1",
+		"bump": "^0.2.5",
+		"ts-dedent": "^2.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.2",
+		"@octokit/auth-action": "^5.1.1",
+		"@octokit/request-error": "^6.1.4",
+		"@octokit/types": "^13.5.0",
+		"@types/node": "^20.16.5",
+		"lefthook": "^1.7.15"
+	}
+}

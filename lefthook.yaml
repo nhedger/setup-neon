@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    package:
+      run: bun run build && git add dist/*
