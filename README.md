@@ -1,3 +1,4 @@
+![](.github/neon.svg)
 # Setup Neon CLI
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nhedger/setup-neon?label=latest&logo=github)](https://github.com/marketplace/actions/setup-neon)
