@@ -22,11 +22,6 @@ The following inputs are supported.
     # Example values: "1.36.0", "latest"
     version: "latest"
 
-    # The Neon API key to use when authenticating the CLI.
-    # This input is optional.
-    # This input is optional and defaults to the NEON_API_KEY environment variable.
-    key: "<neon-api-key>"
-
     # The GitHub token to use to authenticate GitHub API requests.
     # This input is optional and defaults to the job's GitHub token.
     # Example value: ${{ secrets.GITHUB_TOKEN }}
