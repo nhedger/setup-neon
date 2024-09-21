@@ -63,5 +63,8 @@ Install version `1.36.0` of the Neon CLI.
 
 ## License
 
-The scripts and documentation in this project are licensed under
-the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](LICENSE.md).
+
+Copyright (c) 2024 Nicolas Hedger
+
+**Disclaimer:** The "Neon" logo is a trademark of its respective owner and is not covered by this project's license. It is used here for illustrative purposes only.
